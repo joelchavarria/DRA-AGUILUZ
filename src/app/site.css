@@ -252,10 +252,10 @@ textarea:focus-visible {
 }
 .header-inner {
   gap: 25px;
-  min-height: 110px;
+  min-height: 72px;
 }
 .brand-logo {
-  width: 285px;
+  width: 200px;
   aspect-ratio: 1030 / 330;
 }
 /* Frame the supplied square original as a horizontal logo without redrawing it. */
@@ -1483,10 +1483,10 @@ textarea:focus-visible {
     display: inline-flex;
   }
   .header-inner {
-    min-height: 86px;
+    min-height: 64px;
   }
   .brand-logo {
-    width: min(220px, calc(100vw - 120px));
+    width: min(180px, calc(100vw - 120px));
   }
   .home-hero {
     padding-block: 40px;
@@ -1606,7 +1606,7 @@ textarea:focus-visible {
     margin-bottom: 13px;
   }
   .header-inner {
-    min-height: 86px;
+    min-height: 64px;
   }
   .brand-name {
     font-size: 27px;
