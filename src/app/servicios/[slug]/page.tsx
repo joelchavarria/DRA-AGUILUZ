@@ -53,6 +53,7 @@ export default async function ServicePage({
             </Link>
             <h1>{service.name}</h1>
             <p>{service.intro}</p>
+            <p className="mt-4!">{service.explanation}</p>
             <RequestLink service={service.slug} />
           </div>
           <Photo id={service.photo} priority />

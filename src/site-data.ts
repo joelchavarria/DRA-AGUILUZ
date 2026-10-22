@@ -4,6 +4,7 @@ export type Service = {
   shortName: string
   summary: string
   intro: string
+  explanation: string
   image: string
   imageAlt: string
   imagePosition?: string
@@ -19,6 +20,7 @@ export const services: Service[] = [
     shortName: 'Niñas y niños',
     summary: 'Acompañamiento paciente y respetuoso para construir una relación tranquila con el cuidado dental.',
     intro: 'Cada visita se adapta a la edad, el ritmo y las necesidades de tu niña o niño. Nuestro objetivo es cuidar su salud bucal y ayudarle a vivir la consulta con más confianza.',
+    explanation: 'En la revisión observamos los dientes de leche y permanentes, las encías y la salida de nuevos dientes. También conversamos sobre higiene y alimentación para identificar hábitos que pueden favorecer la caries. Con estos hallazgos, explicamos a la familia qué cuidados necesita su niña o niño y cómo darles seguimiento durante su crecimiento.',
     image: '/images/aguiluz/odontopediatria-dientes-leche.png',
     imageAlt: 'Material educativo de la clínica sobre la importancia de los dientes de leche',
     idealFor: ['Primera visita al dentista', 'Revisiones preventivas', 'Orientación de higiene para la familia'],
@@ -31,6 +33,7 @@ export const services: Service[] = [
     shortName: 'Valoración completa',
     summary: 'Una revisión cuidadosa para comprender tu salud bucal y orientarte con claridad.',
     intro: 'La evaluación es el punto de partida para conocer el estado de dientes y encías, conversar sobre tus molestias y definir los siguientes pasos sin apresurarte.',
+    explanation: 'Durante la consulta revisamos dientes, encías y otros tejidos de la boca, y conversamos sobre tus antecedentes de salud y tratamientos previos. Buscamos señales de caries, desgaste o inflamación. Si necesitás estudios complementarios, te explicamos su finalidad antes de organizar un plan de atención con prioridades claras.',
     image: '/images/aguiluz/calidad-servicio.jpg',
     imageAlt: 'Dra. Aguiluz realizando una evaluación dental a un paciente adulto',
     imagePosition: 'center 72%',
@@ -44,6 +47,7 @@ export const services: Service[] = [
     shortName: 'Alineación y función',
     summary: 'Valoración y seguimiento profesional para cuidar la alineación, la mordida y la función.',
     intro: 'Revisamos tus necesidades de alineación y mordida para orientarte sobre el camino adecuado. Cada caso requiere una valoración individual antes de definir un tratamiento.',
+    explanation: 'La ortodoncia estudia la posición de los dientes y cómo encajan al cerrar la boca. En la valoración observamos si hay apiñamiento, espacios o alteraciones de la mordida y explicamos si hacen falta estudios complementarios. Esta información permite plantear opciones de atención y conversar sobre los cuidados y controles que requeriría un tratamiento.',
     image: '/images/aguiluz/atencion-adultos.jpg',
     imageAlt: 'Paciente adulto durante una consulta de valoración en la clínica dental',
     imagePosition: 'center 70%',
@@ -57,6 +61,7 @@ export const services: Service[] = [
     shortName: 'Cuidado periódico',
     summary: 'Cuidado periódico para mantener dientes y encías saludables y detectar cambios a tiempo.',
     intro: 'Las visitas preventivas ayudan a conservar la salud bucal y a identificar señales importantes antes de que se conviertan en molestias mayores.',
+    explanation: 'La limpieza profesional permite retirar la placa y el sarro acumulados en los dientes; este último no se elimina solo con el cepillado. Según la revisión, definimos el cuidado que corresponde y te orientamos sobre la limpieza entre dientes. Es un complemento de la higiene en casa, no un reemplazo, y su frecuencia se adapta a tus necesidades.',
     image: '/images/aguiluz/prevencion-caries-placa.png',
     imageAlt: 'Material de la clínica sobre prevención de caries, manchas y placa',
     idealFor: ['Control periódico', 'Acumulación de placa o sarro', 'Refuerzo de hábitos de higiene'],
@@ -69,6 +74,7 @@ export const services: Service[] = [
     shortName: 'Encías saludables',
     summary: 'Atención a señales como inflamación, sensibilidad o sangrado durante el cepillado.',
     intro: 'Las encías también necesitan atención. Una valoración oportuna permite comprender el origen de las molestias y orientar el cuidado adecuado.',
+    explanation: 'Durante la revisión observamos el estado de las encías, la acumulación de placa y sarro y la presencia de sangrado o cambios alrededor de los dientes. Estos hallazgos ayudan a distinguir una inflamación superficial de problemas que pueden afectar los tejidos que sostienen los dientes. Te explicamos qué cuidados, tratamiento o evaluación adicional corresponden según tu caso.',
     image: '/images/aguiluz/cuidado-encias.png',
     imageAlt: 'Detalle de dientes y encías para el servicio de cuidado de encías',
     imagePosition: 'center 36%',
@@ -82,6 +88,7 @@ export const services: Service[] = [
     shortName: 'Hábitos en casa',
     summary: 'Recomendaciones prácticas para que el cuidado de la sonrisa continúe todos los días en casa.',
     intro: 'Acompañamos a madres, padres y cuidadores con recomendaciones sencillas para crear hábitos de higiene adecuados a cada etapa.',
+    explanation: 'Te orientamos sobre cómo acompañar el cepillado, elegir un cepillo y una pasta con flúor adecuados para la edad, y comenzar la limpieza entre dientes cuando corresponde. También resolvemos dudas sobre los dientes de leche y los hábitos de alimentación. La idea es convertir las recomendaciones en una rutina práctica que la familia pueda mantener en casa.',
     image: '/images/aguiluz/odontopediatria-comodidad.jpg',
     imageAlt: 'Paciente infantil sonriendo con tranquilidad en el sillón dental',
     imagePosition: 'center 40%',
@@ -94,7 +101,8 @@ export const services: Service[] = [
     name: 'Restauraciones dentales',
     shortName: 'Forma y función',
     summary: 'Valoración de dientes que necesitan recuperar su forma o función mediante una restauración.',
-    intro: 'La clínica comparte opciones de restauración como obturaciones, incrustaciones y coronas. La revisión de cada diente permite explicar las alternativas y definir cuáles corresponden a tu caso.',
+    intro: 'Las restauraciones ayudan a recuperar la forma y la función de dientes afectados por caries, fracturas o desgaste. La revisión de cada diente permite explicar las alternativas y definir cuáles corresponden a tu caso.',
+    explanation: 'Una obturación o empaste repone una parte del diente, mientras que una incrustación o una corona pueden ser alternativas cuando se necesita una restauración más amplia. Para elegir, valoramos cuánto tejido dental sano queda, la ubicación del diente y las fuerzas que recibe al morder. Antes de comenzar, conversamos sobre el procedimiento y sus cuidados posteriores.',
     image: '/images/aguiluz/restauraciones-dentales.png',
     imageAlt: 'Material de la clínica sobre restauraciones dentales',
     idealFor: ['Revisión de un diente con daño o desgaste', 'Valoración de una restauración existente', 'Información sobre opciones de restauración'],
