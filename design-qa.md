@@ -35,8 +35,8 @@ Resultado: **21 de 21 comprobaciones HTTP aprobadas**, con el límite de alcance
 
 ## Contenido y publicación
 
-Se mantienen los seis servicios documentados y se agregó restauraciones dentales con el material de la clínica aportado por Joel. No se inventaron credenciales, horarios, resultados ni valoraciones de Google. Los comentarios compartidos por la clínica se identifican como tales.
+Se mantienen los seis servicios documentados; restauraciones dentales y orientación para familias usan material de la clínica aportado por Joel. No se inventaron credenciales, horarios, resultados ni valoraciones de Google. Los comentarios compartidos por la clínica se identifican como tales.
 
-WhatsApp permanece en `50589953348`, número temporal solicitado por Joel. No aparece como teléfono público en los datos estructurados. El formulario prepara una solicitud, no una reserva confirmada.
+WhatsApp usa el número público confirmado `50557450031`. El formulario prepara una solicitud, no una reserva confirmada.
 
-La web sigue siendo una vista local. La indexación está desactivada hasta aprobar el contenido, configurar el dominio y cambiar el teléfono temporal. Metadata, canonical, sitemap y robots están implementados con esas condiciones. La lista de datos pendientes y las instrucciones de publicación están en README.md.
+La web sigue siendo una vista local. La indexación está desactivada hasta aprobar el contenido y configurar el dominio. Metadata, canonical, sitemap y robots están implementados con esas condiciones. La lista de datos pendientes y las instrucciones de publicación están en README.md.

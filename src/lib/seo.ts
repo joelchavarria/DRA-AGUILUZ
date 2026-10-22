@@ -1,13 +1,12 @@
 import type { Metadata } from "next";
+import { clinicContact } from "@/config/contact";
 import { clinic } from "@/config/site";
 
 const configuredUrl = process.env.NEXT_PUBLIC_SITE_URL?.trim();
 export const siteUrl = configuredUrl ? new URL(configuredUrl).origin : null;
 export const allowIndexing = Boolean(
   siteUrl &&
-  process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true" &&
-  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER &&
-  process.env.NEXT_PUBLIC_WHATSAPP_NUMBER !== "50589953348",
+  process.env.NEXT_PUBLIC_ALLOW_INDEXING === "true",
 );
 export function pageMetadata(
   title: string,
@@ -66,5 +65,6 @@ export const dentistSchema = {
     longitude: -85.957051,
   },
   areaServed: "Granada, Nicaragua",
+  telephone: `+${clinicContact.whatsappNumber}`,
   sameAs: [clinic.facebook, clinic.instagram],
 };

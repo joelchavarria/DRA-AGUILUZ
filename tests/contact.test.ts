@@ -2,12 +2,12 @@ import assert from "node:assert/strict";
 import { test } from "node:test";
 import { buildWhatsAppUrl, clinicContact } from "../src/config/contact.ts";
 
-test("WhatsApp conserva el número temporal y codifica tildes, signos y saltos", () => {
-  assert.equal(clinicContact.whatsappNumber, "50589953348");
+test("WhatsApp usa el número público y codifica tildes, signos y saltos", () => {
+  assert.equal(clinicContact.whatsappNumber, "50557450031");
   const message = "Hola, ¿hay valoración?\nMaría & José";
   const url = new URL(buildWhatsAppUrl(message));
   assert.equal(url.origin, "https://wa.me");
-  assert.equal(url.pathname, "/50589953348");
+  assert.equal(url.pathname, "/50557450031");
   assert.equal(url.searchParams.get("text"), message);
 });
 

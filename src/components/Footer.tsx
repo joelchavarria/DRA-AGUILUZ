@@ -84,7 +84,6 @@ export function Footer() {
             </a>
             <p className="footer-hours">
               +505 {clinicContact.whatsappDisplay}
-              {clinicContact.isTestNumber && <small> · Pruebas</small>}
             </p>
           </div>
         </div>

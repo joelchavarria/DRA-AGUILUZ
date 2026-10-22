@@ -23,11 +23,9 @@ export default function ContactPage() {
               <h1>{content.title}</h1>
               <p>{content.description}</p>
               <RequestLink />
-              {clinicContact.isTestNumber && (
-                <small className="test-number">
-                  WhatsApp de pruebas: +505 {clinicContact.whatsappDisplay}
-                </small>
-              )}
+              <small className="contact-whatsapp">
+                WhatsApp: +505 {clinicContact.whatsappDisplay}
+              </small>
             </div>
             <dl className="contact-details">
               <div>

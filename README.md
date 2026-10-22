@@ -12,7 +12,7 @@ npm ci
 npm run dev
 ```
 
-Abrir http://127.0.0.1:5173. El número predeterminado es **50589953348**, solo para pruebas.
+Abrir http://127.0.0.1:5173. El número predeterminado de WhatsApp es **50557450031**.
 
 ```bash
 npm run typecheck # TypeScript
@@ -56,25 +56,25 @@ Contacto muestra ubicación, horarios por confirmar y un acceso al formulario; y
 4. Revisar el mensaje con encabezados y datos ordenados. Se puede volver a corregir sin perder la información.
 5. Elegir **Continuar en WhatsApp**. La persona debe enviar el mensaje desde WhatsApp; la web no lo envía automáticamente.
 
-No se confirma una reserva automáticamente ni se guardan datos en una base de datos. No introducir información clínica sensible. El mensaje de cita indica que la disponibilidad está sujeta a confirmación. El destino temporal se muestra antes de salir de la web. La ruta `/solicitud` permanece en `noindex`, también cuando se publique el resto del sitio.
+No se confirma una reserva automáticamente ni se guardan datos en una base de datos. No introducir información clínica sensible. El mensaje de cita indica que la disponibilidad está sujeta a confirmación. El número de WhatsApp de la clínica se muestra antes de salir de la web. La ruta `/solicitud` permanece en `noindex`, también cuando se publique el resto del sitio.
 
 ## Publicación
 
-1. Verificar el contenido con la doctora y confirmar su número público.
+1. Verificar el contenido con la doctora antes de publicarlo.
 2. Crear `.env.local` a partir de `.env.example` para pruebas, o configurar esas variables en el proveedor de hosting.
-3. Definir `NEXT_PUBLIC_SITE_URL` con el dominio HTTPS real y `NEXT_PUBLIC_WHATSAPP_NUMBER` con el número aprobado, incluido el código de país y sin espacios.
+3. Definir `NEXT_PUBLIC_SITE_URL` con el dominio HTTPS real y `NEXT_PUBLIC_WHATSAPP_NUMBER=50557450031`, incluido el código de país y sin espacios.
 4. Activar `NEXT_PUBLIC_ALLOW_INDEXING=true` únicamente en producción aprobada.
 5. Ejecutar las verificaciones anteriores y volver a compilar: las variables `NEXT_PUBLIC_` se incorporan durante el build.
 6. Desplegar en un alojamiento compatible con Next.js y Node 24. Build: `npm run build`; inicio: `npx next start --hostname 0.0.0.0 --port 3000` (adaptar el puerto al proveedor).
 7. Revisar canonical, robots, sitemap, enlaces y WhatsApp en el dominio definitivo. Registrar la propiedad en Search Console y solicitar indexación con autorización de la propietaria.
 
-El sitio permanece en `noindex` mientras falte el dominio, no se active la indexación o siga el número temporal. La configuración actual de ejemplo mantiene `NEXT_PUBLIC_ALLOW_INDEXING=false`. No se inventa un dominio para canonical/sitemap, ni se publican puntuaciones o reseñas de Google no verificadas. La preparación técnica de SEO no garantiza posiciones en búsquedas. No se ha publicado esta versión.
+El sitio permanece en `noindex` mientras falte el dominio o no se active la indexación. La configuración actual de ejemplo mantiene `NEXT_PUBLIC_ALLOW_INDEXING=false`. No se inventa un dominio para canonical/sitemap, ni se publican puntuaciones o reseñas de Google no verificadas. La preparación técnica de SEO no garantiza posiciones en búsquedas. No se ha publicado esta versión.
 
 El smoke HTTP está pensado para la configuración de pruebas sin indexación. Para probar otro servidor local: `SMOKE_BASE_URL=http://127.0.0.1:3000 node scripts/smoke.mjs`. No sustituye las pruebas de interacción en navegador ni envía mensajes.
 
 ## Pendiente de confirmar con la clínica
 
-Nombre completo y formación, horarios, métodos de pago, servicios adicionales, fotografías originales de instalaciones, resultados clínicos con consentimientos específicos, reseñas verificadas de Google, dominio y número definitivo. La lista también está en `pendingVerification` en la configuración.
+Nombre completo y formación, horarios, métodos de pago, servicios adicionales, fotografías originales de instalaciones, resultados clínicos con consentimientos específicos, reseñas verificadas de Google y dominio. La lista también está en `pendingVerification` en la configuración.
 
 ## Conservación del trabajo anterior
 

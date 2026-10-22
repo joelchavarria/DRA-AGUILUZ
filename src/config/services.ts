@@ -7,7 +7,7 @@ const servicePhotos: Record<string, PhotoId> = {
   ortodoncia: "consultation",
   "prevencion-limpieza": "prevention",
   "cuidado-encias": "gums",
-  "orientacion-familiar": "child",
+  "orientacion-familiar": "familyOrientation",
   "restauraciones-dentales": "restorations",
 };
 export const serviceContent = services.map((service) => ({

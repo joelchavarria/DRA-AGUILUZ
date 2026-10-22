@@ -319,9 +319,6 @@ export function RequestForm({
           <p className="request-destination">
             Destino: Clínica Dental Dra. Aguiluz · +505{" "}
             {clinicContact.whatsappDisplay}
-            {clinicContact.isTestNumber && (
-              <small>Número temporal de pruebas</small>
-            )}
           </p>
           <Button
             asChild

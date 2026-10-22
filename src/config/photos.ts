@@ -20,6 +20,15 @@ export const photos = {
     caption: "Cuidado de los dientes de leche",
     category: "Tratamientos",
   },
+  familyOrientation: {
+    file: "orientacion-familiar.webp",
+    width: 1080,
+    height: 1350,
+    presentation: "full",
+    alt: "Personal de Clínica Dental Dra. Aguiluz recibe a una familia en la entrada de la clínica",
+    caption: "La confianza de cada familia",
+    category: "Nuestro día a día",
+  },
   gums: {
     file: "cuidado-encias.webp",
     width: 1080,
