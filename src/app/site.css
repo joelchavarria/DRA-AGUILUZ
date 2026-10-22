@@ -6,6 +6,9 @@
   --brand-navy: #001b30;
   --brand-gold: #e6c47e;
   --cream: #f8f5ef;
+  --footer-background: #143746;
+  --footer-foreground: #f8f5ef;
+  --footer-muted: #d0dce0;
   --sand: #e8ddd0;
   --clay: #bd8069;
   --clay-text: #945b46;
@@ -1145,7 +1148,11 @@ textarea:focus-visible {
 
 /* Footer */
 .site-footer {
-  background: var(--cream);
+  --petrol: var(--footer-foreground);
+  --quiet: var(--footer-muted);
+  --clay: var(--brand-gold);
+  --clay-text: var(--brand-gold);
+  --ring: var(--brand-gold);
   padding-top: 65px;
 }
 .footer-grid {

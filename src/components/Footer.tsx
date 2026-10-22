@@ -7,7 +7,7 @@ import { clinicContact } from "@/config/contact";
 export function Footer() {
   return (
     <>
-      <footer className="site-footer">
+      <footer className="site-footer bg-(--footer-background) text-(--footer-foreground)">
         <div className="page-width footer-grid">
           <div className="footer-brand">
             <Brand />
