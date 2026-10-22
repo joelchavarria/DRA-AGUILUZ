@@ -1,6 +1,15 @@
 // Recortes de presentación sobre originales autorizados. No se reconstruyen
 // rostros, instalaciones ni resultados clínicos con IA.
 export const photos = {
+  contactDoctor: {
+    file: "doctora-contacto.png",
+    width: 3170,
+    height: 1321,
+    crop: [180, 40, 1000, 760],
+    alt: "Dra. Aguiluz sonriendo junto al equipo de su consultorio",
+    caption: "Te esperamos en la clínica",
+    category: "La doctora",
+  },
   pediatricCare: {
     file: "odontopediatria-dientes-leche.png",
     width: 1080,

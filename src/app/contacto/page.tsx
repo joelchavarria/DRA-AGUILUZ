@@ -39,7 +39,7 @@ export default function ContactPage() {
               </div>
             </dl>
           </div>
-          <Photo id="doctor" className="contact-photo" priority />
+          <Photo id="contactDoctor" className="contact-photo" priority />
         </div>
       </section>
       <section className="section-space contact-location">

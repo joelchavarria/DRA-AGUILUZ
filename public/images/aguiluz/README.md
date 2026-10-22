@@ -1,5 +1,7 @@
 # Banco visual — Clínica Dental Dra. Aguiluz
 
+- `doctora-contacto.png`: banner de 3170 × 1321 aportado por Joel para Contacto. Se conserva el original y se encuadra con CSS el retrato de la doctora, sin el texto publicitario ni el teléfono del anuncio.
+
 - `odontopediatria-dientes-leche.png`: pieza de 1080 × 1350 aportada por Joel para Odontopediatría. Se muestra completa en el listado y en la página del servicio.
 
 - `cuidado-encias.png`: pieza de 1080 × 1350 aportada por Joel para Cuidado de encías. El encuadre CSS conserva la fotografía de dientes y encías y deja fuera el texto publicitario y el teléfono antiguo.
