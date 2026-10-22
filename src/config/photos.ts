@@ -1,6 +1,16 @@
 // Recortes de presentación sobre originales autorizados. No se reconstruyen
 // rostros, instalaciones ni resultados clínicos con IA.
 export const photos = {
+  pediatricCare: {
+    file: "odontopediatria-dientes-leche.png",
+    width: 1080,
+    height: 1350,
+    crop: [0, 0, 1080, 1350],
+    presentation: "full",
+    alt: "Material educativo de la clínica sobre la importancia de los dientes de leche",
+    caption: "Cuidado de los dientes de leche",
+    category: "Tratamientos",
+  },
   gums: {
     file: "cuidado-encias.png",
     width: 1080,

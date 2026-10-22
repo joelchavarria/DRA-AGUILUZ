@@ -1,5 +1,7 @@
 # Banco visual — Clínica Dental Dra. Aguiluz
 
+- `odontopediatria-dientes-leche.png`: pieza de 1080 × 1350 aportada por Joel para Odontopediatría. Se muestra completa en el listado y en la página del servicio.
+
 - `cuidado-encias.png`: pieza de 1080 × 1350 aportada por Joel para Cuidado de encías. El encuadre CSS conserva la fotografía de dientes y encías y deja fuera el texto publicitario y el teléfono antiguo.
 
 - `limpieza-dental-servicios.png`: pieza de 2048 × 2048 aportada por Joel para la portada de Servicios. Se conserva el original y se encuadra con CSS la fotografía de la limpieza, dejando fuera el texto publicitario y los datos antiguos de contacto.

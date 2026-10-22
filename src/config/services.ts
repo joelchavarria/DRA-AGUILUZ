@@ -2,7 +2,7 @@ import type { PhotoId } from "@/config/photos";
 import { services } from "@/site-data";
 
 const servicePhotos: Record<string, PhotoId> = {
-  odontopediatria: "children",
+  odontopediatria: "pediatricCare",
   "evaluacion-integral": "care",
   ortodoncia: "consultation",
   "prevencion-limpieza": "prevention",
