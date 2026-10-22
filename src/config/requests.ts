@@ -85,6 +85,13 @@ const inline = (value: string) =>
     .trim()
     .replace(/[\r\n\t]+/g, " ")
     .replace(/\s{2,}/g, " ");
+const appointmentDate = new Intl.DateTimeFormat("es-NI", {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  timeZone: "UTC",
+});
+
 export function careRequestMessage(data: CareRequest) {
   const service = requestServices.find(
     (option) => option.value === data.service,
@@ -94,30 +101,39 @@ export function careRequestMessage(data: CareRequest) {
   if (!service || Object.keys(validateCareRequest(data, "0000-01-01")).length)
     throw new Error("Revisá los datos de la solicitud.");
   const appointment = data.kind === "cita";
+  const serviceName = service.label.charAt(0).toLocaleLowerCase("es-NI") + service.label.slice(1);
+  const purpose = service.value === "orientacion"
+    ? appointment
+      ? "Quisiera agendar una valoración y recibir orientación."
+      : "Quisiera orientación para saber qué servicio necesito."
+    : appointment
+      ? `Quisiera agendar una cita para *${serviceName}*.`
+      : `Quisiera información sobre *${serviceName}*.`;
   const sections = [
     "Hola, Dra. Aguiluz.",
-    appointment ? "*SOLICITUD DE CITA*" : "*CONSULTA DE INFORMACIÓN*",
-    [`Nombre: ${inline(data.name)}`, `Servicio: ${service.label}`].join("\n"),
+    `Soy *${inline(data.name)}*.\n${purpose}`,
   ];
   if (appointment) {
     sections.push(
       [
-        "*PREFERENCIAS DE CITA*",
-        `Fecha: ${data.date ? data.date.split("-").reverse().join("/") : "Por coordinar"}`,
-        `Horario: ${data.time || "Sin preferencia"}`,
+        "*Mi preferencia*",
+        [
+          data.date ? appointmentDate.format(new Date(`${data.date}T12:00:00Z`)) : "Fecha por coordinar",
+          data.time && data.time !== "Sin preferencia" ? data.time : "Sin preferencia de horario",
+        ].join(" · "),
       ].join("\n"),
     );
-  } else {
-    sections.push(`*TEMA DE LA CONSULTA*\n${data.topic}`);
+  } else if (data.topic !== "Otra consulta") {
+    sections.push(`*Me gustaría saber*\n${data.topic}`);
   }
   if (data.comment.trim())
     sections.push(
-      `*${appointment ? "COMENTARIO" : "MI PREGUNTA"}*\n${data.comment.trim()}`,
+      `*${appointment ? "Comentario adicional" : "Mi pregunta"}*\n${data.comment.trim()}`,
     );
   sections.push(
     appointment
-      ? "Quedo pendiente de la confirmación de disponibilidad. Muchas gracias."
-      : "Agradezco la información. Muchas gracias.",
+      ? "Quedo pendiente de su confirmación.\nMuchas gracias."
+      : "Muchas gracias por su orientación.",
   );
   return sections.join("\n\n");
 }

@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import { WhatsAppMessagePreview } from "@/components/WhatsAppMessagePreview";
 import { buildWhatsAppUrl, clinicContact } from "@/config/contact";
 import {
   careRequestMessage,
@@ -314,22 +315,7 @@ export function RequestForm({
             Este mensaje se abrirá en WhatsApp. Podés corregir los datos antes
             de continuar.
           </p>
-          <div
-            className="request-message"
-            aria-label="Vista previa del mensaje"
-          >
-            {careRequestMessage(data)
-              .split("\n")
-              .map((line, index) => (
-                <div key={index}>
-                  {line.startsWith("*") && line.endsWith("*") ? (
-                    <strong>{line.slice(1, -1)}</strong>
-                  ) : (
-                    line || <br />
-                  )}
-                </div>
-              ))}
-          </div>
+          <WhatsAppMessagePreview message={careRequestMessage(data)} />
           <p className="request-destination">
             Destino: Clínica Dental Dra. Aguiluz · +505{" "}
             {clinicContact.whatsappDisplay}
