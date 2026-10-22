@@ -16,16 +16,19 @@ export default function ContactPage() {
     <main id="contenido">
       <section className="contact-section section-space">
         <div className="page-width contact-grid">
+          <Photo id="contactDoctor" className="contact-photo" priority />
           <div className="contact-copy">
-            <p className="eyebrow">{content.eyebrow}</p>
-            <h1>{content.title}</h1>
-            <p>{content.description}</p>
-            <RequestLink />
-            {clinicContact.isTestNumber && (
-              <small className="test-number">
-                WhatsApp de pruebas: +505 {clinicContact.whatsappDisplay}
-              </small>
-            )}
+            <div className="contact-intro">
+              <p className="eyebrow">{content.eyebrow}</p>
+              <h1>{content.title}</h1>
+              <p>{content.description}</p>
+              <RequestLink />
+              {clinicContact.isTestNumber && (
+                <small className="test-number">
+                  WhatsApp de pruebas: +505 {clinicContact.whatsappDisplay}
+                </small>
+              )}
+            </div>
             <dl className="contact-details">
               <div>
                 <MapPin size={19} />
@@ -39,7 +42,6 @@ export default function ContactPage() {
               </div>
             </dl>
           </div>
-          <Photo id="contactDoctor" className="contact-photo" priority />
         </div>
       </section>
       <section className="section-space contact-location">

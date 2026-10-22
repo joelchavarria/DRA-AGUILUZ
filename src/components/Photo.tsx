@@ -11,7 +11,7 @@ export function Photo({
   priority?: boolean;
 }) {
   const photo = photos[id];
-  if ("presentation" in photo && photo.presentation === "full") {
+  if (!("crop" in photo)) {
     return (
       <div className={`photo ${className}`} style={{ height: "auto", containerType: "normal" }}>
         <Image

@@ -44,7 +44,7 @@ Los siete servicios tienen páginas propias e imágenes distintas, incluidas las
 - `src/lib/seo.ts`: metadata y datos estructurados.
 - `public/images/aguiluz/README.md`: procedencia de las fotografías.
 
-Las fotos de la web son archivos originales autorizados. La foto de inicio usa `dra-aguiluz-consultorio-hd.png`, el archivo de **1080 × 1350 px** aportado por Joel, completo y con su proporción original. En la página de la doctora, `doctorAtWork` presenta la foto con uniforme naranja mediante un recorte que excluye el teléfono y la dirección antiguos del afiche. Los materiales de prevención y restauraciones aportados por Joel aparecen completos en sus servicios respectivos. No se regeneraron caras, pacientes ni tratamientos. Los encuadres no agregan detalle que no exista en el original. Para sustituir una foto, actualizar su archivo, dimensiones y encuadre en `src/config/photos.ts`.
+Las fotos de la web son archivos originales autorizados. La foto de inicio usa `dra-aguiluz-consultorio-hd.webp`, una conversión WebP sin pérdida del archivo de **1080 × 1350 px** aportado por Joel, completo y con su proporción original. En la página de la doctora, `doctorAtWork` presenta la foto con uniforme naranja mediante un recorte que excluye el teléfono y la dirección antiguos del afiche. Los materiales de prevención y restauraciones aportados por Joel aparecen completos en sus servicios respectivos. No se regeneraron caras, pacientes ni tratamientos. Los encuadres no agregan detalle que no exista en el original. Para sustituir una foto, actualizar su archivo, dimensiones y encuadre en `src/config/photos.ts`.
 
 Contacto muestra ubicación, horarios por confirmar y un acceso al formulario; ya no duplica el formulario.
 

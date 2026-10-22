@@ -26,7 +26,7 @@ const currentYear = new Date().getFullYear()
 export function Brand() {
   return (
     <Link className="brand" to="/" aria-label="Clínica Dental Dra. Aguiluz, ir al inicio">
-      <span className="brand-crop" aria-hidden="true"><img src="/images/aguiluz/referencia-marca.png" alt="" /></span>
+      <span className="brand-crop" aria-hidden="true"><img src="/images/aguiluz/referencia-marca.webp" alt="" /></span>
       <span className="brand-fallback"><strong>Dra. Aguiluz</strong><small>Clínica Dental</small></span>
     </Link>
   )

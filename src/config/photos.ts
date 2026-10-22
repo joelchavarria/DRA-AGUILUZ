@@ -2,16 +2,16 @@
 // rostros, instalaciones ni resultados clínicos con IA.
 export const photos = {
   contactDoctor: {
-    file: "doctora-contacto.png",
+    file: "doctora-contacto.webp",
     width: 3170,
     height: 1321,
-    crop: [180, 40, 1000, 760],
-    alt: "Dra. Aguiluz sonriendo junto al equipo de su consultorio",
-    caption: "Te esperamos en la clínica",
+    presentation: "full",
+    alt: "Anuncio de Clínica Dental Dra. Aguiluz sobre una revisión bucal después de chikungunya",
+    caption: "Agendá tu cita de valoración",
     category: "La doctora",
   },
   pediatricCare: {
-    file: "odontopediatria-dientes-leche.png",
+    file: "odontopediatria-dientes-leche.webp",
     width: 1080,
     height: 1350,
     crop: [0, 0, 1080, 1350],
@@ -21,7 +21,7 @@ export const photos = {
     category: "Tratamientos",
   },
   gums: {
-    file: "cuidado-encias.png",
+    file: "cuidado-encias.webp",
     width: 1080,
     height: 1350,
     crop: [0, 155, 1080, 650],
@@ -30,7 +30,7 @@ export const photos = {
     category: "Tratamientos",
   },
   servicesOverview: {
-    file: "limpieza-dental-servicios.png",
+    file: "limpieza-dental-servicios.webp",
     width: 2048,
     height: 2048,
     crop: [430, 365, 1050, 740],
@@ -39,7 +39,7 @@ export const photos = {
     category: "Tratamientos",
   },
   doctor: {
-    file: "dra-aguiluz-consultorio-hd.png",
+    file: "dra-aguiluz-consultorio-hd.webp",
     width: 1080,
     height: 1350,
     crop: [70, 270, 390, 430],
@@ -57,7 +57,7 @@ export const photos = {
     category: "La doctora",
   },
   doctorAtWork: {
-    file: "doctora-atencion-ortodoncia.png",
+    file: "doctora-atencion-ortodoncia.webp",
     width: 3170,
     height: 1321,
     crop: [2460, 20, 710, 780],
@@ -66,7 +66,7 @@ export const photos = {
     category: "La doctora",
   },
   prevention: {
-    file: "prevencion-caries-placa.png",
+    file: "prevencion-caries-placa.webp",
     width: 1080,
     height: 1350,
     crop: [0, 0, 1080, 1350],
@@ -76,7 +76,7 @@ export const photos = {
     category: "Tratamientos",
   },
   restorations: {
-    file: "restauraciones-dentales.png",
+    file: "restauraciones-dentales.webp",
     width: 1080,
     height: 1350,
     crop: [0, 0, 1080, 1350],

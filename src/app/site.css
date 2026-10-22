@@ -1004,18 +1004,23 @@ textarea:focus-visible {
 /* Appointment request */
 .contact-grid {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: start;
+  gap: 48px;
+}
+.contact-copy {
+  display: grid;
   grid-template-columns: 0.9fr 1.1fr;
   align-items: start;
   gap: 95px;
-}
-.contact-copy {
-  padding-top: 25px;
+  max-width: none;
+  padding-top: 0;
 }
 .contact-copy h1 {
   font-size: 50px;
   max-width: 430px;
 }
-.contact-copy > p:not(.eyebrow) {
+.contact-intro > p:not(.eyebrow) {
   max-width: 420px;
   margin-block: 25px 28px;
   color: var(--quiet);
@@ -1028,7 +1033,7 @@ textarea:focus-visible {
   color: var(--clay-text);
 }
 .contact-details {
-  margin: 37px 0 0;
+  margin: 0;
 }
 .contact-details > div {
   display: grid;
@@ -1252,7 +1257,7 @@ textarea:focus-visible {
   margin-top: 26px;
 }
 .contact-photo {
-  height: 440px;
+  height: auto;
 }
 .request-intro {
   padding-top: 20px;
@@ -1417,9 +1422,6 @@ textarea:focus-visible {
     font-size: 13px;
     margin-top: 18px;
   }
-  .contact-photo {
-    height: 340px;
-  }
 }
 
 @media (max-width: 1100px) {
@@ -1431,8 +1433,7 @@ textarea:focus-visible {
   }
   .hero-grid,
   .page-intro-grid,
-  .doctor-intro-grid,
-  .contact-grid {
+  .doctor-intro-grid {
     gap: 45px;
   }
   .welcome-grid {
@@ -1557,10 +1558,11 @@ textarea:focus-visible {
     height: 280px;
   }
   .contact-grid {
-    grid-template-columns: 1fr;
     gap: 40px;
   }
   .contact-copy {
+    grid-template-columns: 1fr;
+    gap: 0;
     padding: 0;
   }
   .contact-copy h1 {
@@ -1570,8 +1572,9 @@ textarea:focus-visible {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 25px;
+    margin-top: 37px;
   }
-  .contact-copy > p:not(.eyebrow) {
+  .contact-intro > p:not(.eyebrow) {
     max-width: 600px;
   }
   .faq-page {

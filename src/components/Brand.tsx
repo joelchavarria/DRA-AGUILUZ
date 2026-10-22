@@ -15,7 +15,7 @@ export function Brand({
       >
         <Image
           className="brand-logo-image"
-          src="/images/aguiluz/logo-aguiluz-original.png"
+          src="/images/aguiluz/logo-aguiluz-original.webp"
           alt=""
           width={1200}
           height={1200}
