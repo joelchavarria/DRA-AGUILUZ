@@ -1153,23 +1153,19 @@ textarea:focus-visible {
   --clay: var(--brand-gold);
   --clay-text: var(--brand-gold);
   --ring: var(--brand-gold);
-  padding-top: 65px;
 }
 .footer-grid {
   display: grid;
   grid-template-columns: 1.2fr 0.7fr 1fr;
   gap: 85px;
-  padding-bottom: 45px;
 }
 .footer-brand > p {
-  margin-top: 22px;
   font-size: 12px;
   color: var(--quiet);
 }
 .social-links {
   display: flex;
   gap: 15px;
-  margin-top: 20px;
 }
 .social-links a {
   padding: 5px;
@@ -1222,7 +1218,6 @@ textarea:focus-visible {
   align-items: center;
   justify-content: space-between;
   gap: 15px;
-  padding-block: 20px;
   color: var(--quiet);
   font-size: 9px;
 }
@@ -1866,7 +1861,7 @@ textarea:focus-visible {
   }
   .footer-grid {
     grid-template-columns: 1fr 1fr;
-    gap: 35px 25px;
+    gap: 28px 25px;
   }
   .footer-brand {
     grid-column: 1/-1;
@@ -1879,9 +1874,6 @@ textarea:focus-visible {
     flex-direction: column;
     gap: 8px;
     padding-right: 50px;
-  }
-  .site-footer {
-    padding-top: 45px;
   }
   .floating-whatsapp {
     right: 15px;

@@ -19,7 +19,9 @@ export default function ServicesPage() {
           <div>
             <p className="eyebrow">{content.eyebrow}</p>
             <h1>{content.title}</h1>
-            <p>{content.description}</p>
+            <p className="text-justify hyphens-auto leading-[1.9]! [text-align-last:start] [text-wrap:wrap]!">
+              {content.description}
+            </p>
             <RequestLink />
           </div>
           <Photo id="servicesOverview" priority />
@@ -36,7 +38,9 @@ export default function ServicesPage() {
                     {service.name}
                   </Link>
                 </h2>
-                <p>{service.summary}</p>
+                <p className="text-justify hyphens-auto leading-[1.9]! [text-align-last:start] [text-wrap:wrap]!">
+                  {service.summary}
+                </p>
                 <div className="directory-actions">
                   <Link
                     className="text-link"

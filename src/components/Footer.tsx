@@ -7,16 +7,16 @@ import { clinicContact } from "@/config/contact";
 export function Footer() {
   return (
     <>
-      <footer className="site-footer bg-(--footer-background) text-(--footer-foreground)">
-        <div className="page-width footer-grid">
+      <footer className="site-footer bg-(--footer-background) pt-9 text-(--footer-foreground) min-[651px]:pt-11">
+        <div className="page-width footer-grid pb-7">
           <div className="footer-brand">
             <Brand />
-            <p>
+            <p className="mt-4!">
               El cuidado de tu sonrisa,
               <br />
               con calma y cercanía.
             </p>
-            <div className="social-links">
+            <div className="social-links mt-3">
               <a
                 className="inline-flex min-h-11 items-center gap-2"
                 href={clinic.instagram}
@@ -88,7 +88,7 @@ export function Footer() {
             </p>
           </div>
         </div>
-        <div className="page-width footer-bottom">
+        <div className="page-width footer-bottom py-3.5">
           <span>
             © {new Date().getFullYear()} {clinic.name}
           </span>

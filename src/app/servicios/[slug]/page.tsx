@@ -52,8 +52,10 @@ export default async function ServicePage({
               Todos los servicios
             </Link>
             <h1>{service.name}</h1>
-            <p>{service.intro}</p>
-            <p className="mt-4!">{service.explanation}</p>
+            <div className="mt-6 grid gap-5 text-justify hyphens-auto [text-align-last:start]">
+              <p className="m-0! leading-[1.9]! [text-wrap:wrap]!">{service.intro}</p>
+              <p className="m-0! leading-[1.9]! [text-wrap:wrap]!">{service.explanation}</p>
+            </div>
             <RequestLink service={service.slug} />
           </div>
           <Photo id={service.photo} priority />
