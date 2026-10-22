@@ -1,6 +1,24 @@
 // Recortes de presentación sobre originales autorizados. No se reconstruyen
 // rostros, instalaciones ni resultados clínicos con IA.
 export const photos = {
+  gums: {
+    file: "cuidado-encias.png",
+    width: 1080,
+    height: 1350,
+    crop: [0, 155, 1080, 650],
+    alt: "Detalle de dientes y encías para el servicio de cuidado de encías",
+    caption: "Cuidado de encías",
+    category: "Tratamientos",
+  },
+  servicesOverview: {
+    file: "limpieza-dental-servicios.png",
+    width: 2048,
+    height: 2048,
+    crop: [430, 365, 1050, 740],
+    alt: "Limpieza dental con espejo e instrumental odontológico",
+    caption: "Cuidado dental profesional",
+    category: "Tratamientos",
+  },
   doctor: {
     file: "dra-aguiluz-consultorio-hd.png",
     width: 1080,

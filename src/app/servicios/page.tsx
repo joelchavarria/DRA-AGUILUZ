@@ -22,7 +22,7 @@ export default function ServicesPage() {
             <p>{content.description}</p>
             <RequestLink />
           </div>
-          <Photo id="care" priority />
+          <Photo id="servicesOverview" priority />
         </div>
       </section>
       <section className="section-space">

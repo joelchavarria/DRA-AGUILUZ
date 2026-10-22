@@ -6,7 +6,7 @@ const servicePhotos: Record<string, PhotoId> = {
   "evaluacion-integral": "care",
   ortodoncia: "consultation",
   "prevencion-limpieza": "prevention",
-  "cuidado-encias": "doctor",
+  "cuidado-encias": "gums",
   "orientacion-familiar": "child",
   "restauraciones-dentales": "restorations",
 };
