@@ -6,7 +6,7 @@
   --brand-navy: #001b30;
   --brand-gold: #e6c47e;
   --cream: #f8f5ef;
-  --footer-background: #143746;
+  --footer-background: var(--brand-navy);
   --footer-foreground: #f8f5ef;
   --footer-muted: #d0dce0;
   --sand: #e8ddd0;

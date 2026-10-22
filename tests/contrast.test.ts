@@ -34,7 +34,8 @@ test("el footer azul mantiene contraste AA en textos, enlaces y anotaciones", ()
     assert.ok(value, `color ${name} definido`);
     return value;
   };
-  const background = color("footer-background");
+  assert.match(css, /--footer-background:\s*var\(--brand-navy\)/);
+  const background = color("brand-navy");
   for (const name of ["footer-foreground", "footer-muted", "brand-gold"]) {
     assert.ok(contrast(color(name), background) >= 4.5, `${name} sobre el footer azul`);
   }
